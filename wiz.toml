@@ -1,0 +1,18 @@
+package_name = 'uart'
+builder = 'vivado'
+programmer = 'vivado'
+target_part = 'xc7a35ticsg324-1L'
+target_device = 'xc7a35t_0'
+source_files = [
+    'top.sv',
+    'uart.sv',
+    'uart_rx_buffer.sv',
+    'uart_tx_buffer.sv'
+]
+bitstream_path = 'uart.bit'
+
+[pins]
+tx = 'D10'
+rx = 'A9'
+clk = 'E3'
+reset = 'C2'
